@@ -1,0 +1,18 @@
+[package]
+name = "my_python_module"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "my_python_module"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.22.2", features = ["extension-module"] }
+flate2 = "1.0"
+rand = "0.8"
+rayon = "1.8"
+bio = "1.5"
+ndarray = "0.15"
+numpy = "0.22"
+ahash = "0.8"
