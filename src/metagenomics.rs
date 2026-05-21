@@ -1,8 +1,5 @@
 use pyo3::prelude::*;
-use pyo3::types::PyDict;
 use std::collections::HashMap;
-use std::hash::{Hash, Hasher};
-use std::collections::hash_map::DefaultHasher;
 
 /// k-mer分类器（简化版）
 #[pyfunction]

@@ -77,6 +77,7 @@ pub fn umi_dedup(
 }
 
 /// Sparse matrix条目
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct SparseEntry {
     pub row: usize,

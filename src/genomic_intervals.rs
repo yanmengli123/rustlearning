@@ -1,8 +1,7 @@
 use pyo3::prelude::*;
-use pyo3::types::PyDict;
-use std::collections::HashMap;
 
 /// 基因组区间
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct GenomicInterval {
     pub chrom: String,

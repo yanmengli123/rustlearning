@@ -1,6 +1,6 @@
 use pyo3::prelude::*;
 use std::fs::File;
-use std::io::{self, BufRead, BufReader, Write, BufWriter};
+use std::io::{BufRead, BufReader, Write, BufWriter};
 use flate2::read::GzDecoder;
 use flate2::write::GzEncoder;
 use flate2::Compression;

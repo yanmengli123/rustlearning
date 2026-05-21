@@ -109,8 +109,6 @@ pub fn fisher_exact(a: u64, b: u64, c: u64, d: u64) -> f64 {
     let b = b as f64;
     let c = c as f64;
     let d = d as f64;
-    let n = a + b + c + d;
-
     let odds_ratio = (a * d) / (b * c).max(1e-300);
     let se = (1.0 / a + 1.0 / b + 1.0 / c + 1.0 / d).sqrt();
     let z = odds_ratio.ln() / se;

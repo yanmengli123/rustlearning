@@ -5,6 +5,7 @@ use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 
 /// SAM记录结构
+#[allow(dead_code)]
 #[derive(Debug)]
 pub struct SamRecord {
     pub qname: String,

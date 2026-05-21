@@ -8,11 +8,6 @@ name = "my_python_module"
 crate-type = ["cdylib"]
 
 [dependencies]
-pyo3 = { version = "0.22.2", features = ["extension-module"] }
+pyo3 = { version = "0.22.6", features = ["extension-module", "abi3-py37"] }
 flate2 = "1.0"
 rand = "0.8"
-rayon = "1.8"
-bio = "1.5"
-ndarray = "0.15"
-numpy = "0.22"
-ahash = "0.8"

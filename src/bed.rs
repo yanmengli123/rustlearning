@@ -5,6 +5,7 @@ use std::fs::File;
 use std::io::{self, BufRead, BufReader};
 
 /// BED区间
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct BedInterval {
     pub chrom: String,
@@ -216,6 +217,7 @@ pub fn bed_closest(path_a: &str, path_b: &str) -> PyResult<Vec<String>> {
 }
 
 /// VCF记录
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct VcfRecord {
     pub chrom: String,
@@ -321,6 +323,7 @@ pub fn vcf_filter(path: &str, min_qual: f64) -> PyResult<Vec<String>> {
 }
 
 /// GTF记录
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub struct GtfRecord {
     pub chrom: String,
